@@ -1,0 +1,410 @@
+/* General styles */
+.image {
+  height: 40.2rem;
+  width: auto;
+  background-image: url('14.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  min-width: 300px;
+}
+
+#navbarSupportedContent {
+  margin: auto;
+  padding: auto;
+}
+
+#navbarSupportedContent {
+  color: white;
+}
+
+.nav-item {
+  margin-left: 1rem;
+}
+
+.container-fluid:hover {
+  background-color: transparent;
+}
+
+.image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.image>* {
+  position: relative;
+  z-index: 2;
+}
+
+.head_section {
+  height: 4rem;
+  width: auto;
+  position: relative;
+  z-index: 3;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.content-wrapper {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.background-image {
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+
+.home_page {
+  position: relative;
+  height: 500px;
+  width: auto;
+  scroll-margin-top: 600px;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgb(0, 0, 0);
+}
+
+#navbar .nav-link {
+  color: rgb(255, 255, 255);
+}
+
+#navbar .nav-link:hover {
+  color: rgb(93, 255, 18);
+}
+
+#navbar .navbar-brand img {
+  filter: brightness(0) invert(1);
+}
+
+#navbar .navbar-toggler-icon {
+  filter: brightness(1) invert(0);
+}
+
+.navbar.scrolled {
+  background-color: rgb(245, 25, 25);
+  color: white;
+}
+
+.navbar.scrolled .nav-link {
+  color: white;
+}
+
+.navbar.scrolled .navbar-brand img {
+  filter: brightness(0) invert(1);
+}
+
+.navbar.scrolled .navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
+
+body {
+  padding-top: 1rem;
+}
+
+.content_div_in_homepage {
+  background-color: rgba(0, 0, 0, .5);
+  margin-left: 8rem;
+  margin-right: 45rem;
+  margin-top: 5rem;
+  text-align: left;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(255, 255, 255);
+  padding: 1.5rem;
+  border-left: 5px solid #ffffff;
+  z-index: 1;
+}
+
+.content_div_in_homepage h1 {
+  font-size: 2.5rem;
+}
+
+.content_div_in_homepage p {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+
+/* Media query for mobile devices */
+@media (max-width: 1170px) {
+  .content_div_in_homepage {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    z-index: 0;
+  }
+
+  .content_div_in_homepage h1 {
+    font-size: 1.6rem;
+  }
+
+  .content_div_in_homepage p {
+    font-size: 1rem;
+  }
+
+  .head_section {
+    z-index: 5;
+    /* Ensure the navbar is above the content */
+  }
+
+  #navbar .navbar-collapse {
+    background-color: rgb(0, 0, 0);
+    /* Background color for collapsed navbar */
+  }
+
+  #navbar .nav-link {
+    color: white;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media only screen and (max-width:1170px) {
+  .image {
+    height: 25.2rem;
+    width: auto;
+    background-image: url('14.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    min-width: 300px;
+  }
+
+}
+
+
+/*                courses               */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.courses-section {
+  background-image: url("back3.jpg");
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 20px;
+  scroll-margin-top: 15px;
+  /* border: 1px solid black; */
+
+}
+
+.courses-section h1 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 25px 0px;
+  column-gap: 2rem;
+}
+
+.container {
+  margin-top: -60px;
+  width: 1170px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.courses {
+  flex-basis: 45%;
+  box-shadow: 0px 0px 10px 3px black;
+  margin: 20px 0px;
+  background-color: lightgray;
+  text-align: center;
+  padding: 20px 30px;
+}
+
+.courses h3 {
+  padding: 10px 0px;
+}
+
+.courses p {
+  font-size: 14px;
+  padding: 10px;
+}
+
+.courses button {
+  background-color: red;
+  color: white;
+  padding: 0px 10px;
+  border-radius: 5px;
+  border: transparent;
+  margin: 10px 0px;
+}
+
+.courses:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+.courses:hover h3,
+.courses:hover p {
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(25, 202, 25);
+}
+
+.courses:hover button {
+  background-color: blue;
+  columns: white;
+}
+
+@media only screen and (max-width:1170px) {
+  .container {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width:10px) and (max-width:380px) {
+  .container {
+    width: 100%;
+    position: sticky;
+  }
+
+  .courses img {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+/*          footer section               */
+.footer {
+  height: 2rem;
+  width: 100%;
+  display: flex;
+}
+
+.box1 {
+  text-align: right;
+  width: 50%;
+  font-size: small;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.box1 a {
+  text-decoration: none;
+  color: rgb(121, 120, 120);
+  margin: 10px;
+  padding: 5px;
+}
+
+.box2 {
+  width: 50%;
+  margin: 0rem 0rem 0rem 2rem;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 0.5;
+}
+
+.box1 a:hover {
+  text-decoration: underline;
+  color: green;
+}
+
+.social_media_box {
+  height: 50px;
+  width: 100%;
+  position: relative;
+  text-align: right;
+}
+
+.box3 {
+  height: 50px;
+  width: 40%;
+  text-align: center;
+  word-spacing: 1rem;
+  margin-right: auto;
+  position: absolute;
+  right: 0px;
+}
+
+@media only screen and (max-width: 800px) {
+  .box1 a {
+    margin: 0px;
+    padding: 7px;
+    font-size: 10px;
+  }
+
+  .box1 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .box1,
+  .box2 {
+    width: 100%;
+    margin: 0;
+  }
+
+  .box1 {
+    order: 1;
+    line-height: 4;
+  }
+
+  .box2 {
+    order: 2;
+    line-height: 1;
+  }
+
+  .box3 {
+    order: 3;
+    line-height: 12;
+    text-align: center;
+    position: static;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 274px) and (max-width: 302px) {
+  .box2 {
+    text-align: center; 
+  }
+
+  .box2 h1 span {
+    display: block;
+    margin-top: 5px; 
+    font-size: smaller;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .box3 {
+    position: static;
+    margin: auto;
+  }
+}
+
+
+@media only screen and (max-width: 349px) {
+  .box3 {
+    order: 3;
+    line-height: 23;
+    text-align: center;
+    position: static;
+    margin: 0 auto;
+    word-spacing: 3px;
+    width: 100%;
+  }
+}
