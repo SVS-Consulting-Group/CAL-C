@@ -10,11 +10,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="index.css">
     <link rel="icon" href="download.jpg">
+   
 </head>
 
 <body>
+
     <div class="image">
         <div class="head_section">
             <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -24,31 +29,33 @@
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation" >
+                        aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent" style="color: rgb(93, 255, 18);">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#home" style="color: rgb(93, 255, 18);">Home</a>
+                                <a class="nav-link active" aria-current="page" href="#home"
+                                    style="color: rgb(93, 255, 18);">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#courses" tabindex="-1">Courses</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link toggle" href="#Admission" id="navbarDropdown" role="button" data-bs-toggle="" aria-expanded="false">
+                                <a class="nav-link toggle" href="#About_Us_section" id="navbarDropdown" role="button"
+                                    data-bs-toggle="" aria-expanded="false">
                                     About_Us
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#About_Us">Contact_Us</a>
+                                <a class="nav-link" href="#contact_us">Contact_Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#About_Us">Admission_Portal</a>
+                                <a class="nav-link" href="#admission_portal">Admission_Portal</a>
                             </li>
                         </ul>
                     </div>
-                    
+
                 </div>
             </nav>
         </div>
@@ -71,7 +78,7 @@
                     skills and knowledge needed to design, code, test, and debug software applications. Through a blend
                     of theoretical concepts and hands-on practice, students will learn to develop efficient and
                     functional software solutions.</p>
-                <a href="Software_courses.html"><button>Read More</button></a>
+                <a href="http://127.0.0.1:5500/Software_courses.html#Courses"><button>Read More</button></a>
             </div>
             <div class="courses">
                 <img src="hardware-removebg-preview.png">
@@ -80,23 +87,128 @@
                     fundamental concepts and practical skills required to design, build, and troubleshoot computer
                     hardware. Students will gain hands-on experience with various hardware components and systems,
                     learning how they interact and function together.</p>
-                <a href="#Hardware courses"><button>Read More</button></a>
+                <a href="http://127.0.0.1:5500/Hardware-courses.html"><button>Read More</button></a>
             </div>
         </div>
     </div>
+
+    <section>
+        <div class="container_1" id="About_Us_section">
+            <div class="menu">
+                <button class="tab active " onclick="showContent('overview')">Overview</button>
+                <button class="tab" onclick="showContent('Objectives')">Our Objectives</button>
+            </div>
+            <div class="content">
+                <div id="overview" class="tab-content" style="display:block;">
+                    <h2>Overview</h2>
+                    <p>
+                    <ul>
+                        <li>Punjab Information & Communication Technology Corporation Ltd (Punjab Infotech) is a Punjab
+                            Government Undertaking that has been successfully spearheading the Software Training
+                            revolution
+                            through a strong network of CAL-C Computer Education Centers in Punjab since 1988. Punjab
+                            Infotech
+                            is the premier agency of the state government in facilitating establishment of IT and IT
+                            enabled
+                            service's (ITES) industry in Punjab, and training human resources for this industries. After
+                            the
+                            success in Software skill set, CAL-C took a step further in the field of Advanced Hardware &
+                            Networking in 2003.</li>
+                        <li>CAL-C provides focused Software, Hardware, Networking and ITES courses with technical inputs
+                            from
+                            industry leaders. CAL-C has an extensive network of training partner centres in the region
+                            to
+                            provide quality computer training vis-a-vis industry requirement. More than 80+ CAL-C
+                            Centres in
+                            Punjab & Himachal Pradesh. PGDCA course by Punjab Infotech accredited by Punjab State Board
+                            of
+                            Technical Education (PSBTE).</li>
+                        <li>Apart from regular courses Punjab Infotech has also provided free training in various
+                            sponsored
+                            schemes of GoI and State Government eg WISHScheme, SC BPL training etc.</li>
+                    </ul>
+                    </p>
+                </div>
+                <div id="Objectives" class="tab-content" style="display:none;">
+                    <h2>Our Objectives</h2>
+                    <p>
+                    <ul>
+                        <li>
+                            Spread IT awareness to the youth of Punjab & India.
+                        </li>
+                        <li>
+                            Provide professional training in IT as per the changing industry requirement to improve
+                            employability to the youth.
+                        </li>
+                        <li>
+                            Maintain high quality of training.
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="fixed-image">
+                <img src="overview1.png" alt="Fixed Image">
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="contact-section" id="contact_us">
+        <section class="contact">
+            <h2>Contact_Us!</h2>
+            <form action="#">
+                <div class="input-box">
+                    <div class="input-field field">
+                        <input type="text" class="item" id="name" placeholder="Full Name" autocomplete="off">
+                        <div class="error-text">Full name can't be blank</div>
+                    </div>
+                    <div class="input-field field">
+                        <input type="text" class="item" id="email" placeholder="Email-Id" autocomplete="off">
+                        <div class="error-text">Email-Id can't be blank</div>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <div class="input-field field">
+                        <input type="text" class="item" id="phone" placeholder="Phone-No" autocomplete="off">
+                        <div class="error-text">Phone Number can't be blank</div>
+                    </div>
+                    <div class="input-field field">
+                        <input type="text" class="item" id="subject" placeholder="Course duration: 1y/6m/3m/3w/15d"
+                            autocomplete="off">
+                        <div class="error-text">Subject can't be blank</div>
+                    </div>
+                </div>
+                <div class="textarea-field field">
+                    <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" class="item"
+                        autocomplete="off"></textarea>
+                </div>
+                <button type="button">Send Message</button>
+            </form>
+        </section>
+    </section>
+
+
+
     <hr>
     <section>
         <div class="footer">
             <div class="box2">
-                <h1 style="font-size: 1.3rem;">CAL-C <span>(Undertaking by Punjab Govt)</span></h1>
-                <p style="font-size: smaller; color: gray;">Copyright © 2024 All rights reserved</p>
+                <img src="SVS_logo_2.png" height="100px" id="logo_svs">
+                <h1 style="font-size: 1.3rem; color: rgb(197, 34, 34);">SVS Education Services <br>
+                    <span>(Undertaking by Punjab Govt)</span>
+                </h1>
+                <h6>Authorized Centre of CAL-C <span id="pb">(Punjab Infotech)</span></h6>
+
+                <!-- <p style="font-size: smaller; color: gray;">Copyright © 2024 All rights reserved</p> -->
             </div>
             <div class="box1">
                 <a href="#home">HOME</a>
                 <a href="#courses">COURSES</a>
-                <a href="#Contact Us">CONTACT_US </a>
-                <a href="#About_Us">ABOUT_US</a>
-                <a href="#Admission Portal">ADMISSION_PORTAL</a>
+                <a href="#contact_us">CONTACT_US </a>
+                <a href="#">ABOUT_US</a>
+                <a href="#">ADMISSION_PORTAL</a>
             </div>
     </section>
     <div class="social_media_box">
@@ -107,5 +219,8 @@
             <a href="#youtube"><img src="youtube-removebg-preview.png" height="30px"></a>
         </div>
     </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="javascript.js"></script>
 </body>
+
 </html>
